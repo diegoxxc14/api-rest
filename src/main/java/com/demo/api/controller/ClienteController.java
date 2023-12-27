@@ -18,8 +18,6 @@ import com.demo.api.model.entity.Cliente;
 import com.demo.api.model.payload.MensajeResponse;
 import com.demo.api.service.IClienteService;
 
-import java.util.*;;
-
 @RestController
 @RequestMapping(path = "/api/v1")
 public class ClienteController {
@@ -48,10 +46,7 @@ public class ClienteController {
                         .mensaje(e.getMessage())
                         .object(null).build(), 
                 HttpStatus.METHOD_NOT_ALLOWED);
-        }
-        
-
-        
+        }  
     }
 
     @PutMapping(path = "/cliente")
